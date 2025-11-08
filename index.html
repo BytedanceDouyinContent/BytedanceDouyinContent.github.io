@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抖音内容技术发表工作List（公开版）</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+        }
+        body {
+            background: #fff;
+            color: #333;
+            line-height: 1.6;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #222;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #0066cc;
+            display: flex;
+            align-items: center;
+        }
+        .section-title::before {
+            content: "▌";
+            color: #0066cc;
+            margin-right: 8px;
+            font-size: 24px;
+        }
+        .content-list {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+        .content-item {
+            margin-bottom: 12px;
+            font-size: 16px;
+            position: relative;
+            padding-left: 20px;
+        }
+        .content-item::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #0066cc;
+            font-weight: bold;
+        }
+        .content-item a {
+            color: #0066cc;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .content-item a:hover {
+            text-decoration: underline;
+        }
+        .tag {
+            display: inline-block;
+            background: #e6f7ff;
+            color: #0066cc;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-left: 8px;
+        }
+        .sub-section {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        .sub-section-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .contact-section {
+            border-top: 2px solid #f0f0f0;
+            padding-top: 30px;
+            margin-top: 50px;
+        }
+        .contact-qrcode {
+            display: flex;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        .qrcode-item {
+            text-align: center;
+        }
+        .qrcode-placeholder {
+            width: 120px;
+            height: 120px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            margin: 0 auto 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fafafa;
+            font-size: 12px;
+            color: #999;
+        }
+        .qrcode-desc {
+            font-size: 14px;
+            color: #666;
+        }
+        /* 适配移动端 */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            .header h1 {
+                font-size: 24px;
+            }
+            .section-title {
+                font-size: 20px;
+            }
+            .content-list {
+                margin-left: 20px;
+            }
+            .contact-qrcode {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部标题 -->
+    <div class="header">
+        <h1>抖音内容技术发表工作List（公开版）</h1>
+    </div>
+
+    <!-- 团队介绍 -->
+    <div class="section">
+        <h2 class="section-title">团队介绍</h2>
+        <div class="content-item">
+            抖音内容技术团队负责抖音集团内容算法工作，业务覆盖抖音、今日头条、西瓜视频、剪映等业务，承接业务在内容理解、搜索推荐技术、新业务方向探索等方向的工作。技术上涵盖了CV、NLP、音频、LLM等算法方向。团队承载业务需求同时还负责底层基础算法技术，推动如基础预训练模型、视频生成等学术和专利相关工作，负责为抖音各个技术方向提供长期有深度的技术支撑。得益于抖音集团业务数量庞大的多模态业务数据和业务需求，团队能够有资源和机会去做出行业领先的技术创新，用最新的技术去改变影响用户和改变行业格局。
+        </div>
+    </div>
+
+    <!-- 开源代码 -->
+    <div class="section">
+        <h2 class="section-title">开源代码</h2>
+        
+        <div class="sub-section">
+            <h3 class="sub-section-title">多模态大模型</h3>
+            <div class="content-list">
+                <div class="content-item"><a href="https://huggingface.co/BytedanceDouyinContent/SAIL-VL-1d7Thinking-8B-2507">SAIL-VL-Thinking-8B</a></div>
+                <div class="content-item"><a href="https://huggingface.co/BytedanceDouyinContent/SAIL-VL-1d7Thinking-2B-2507">SAIL-VL-Thinking-2B</a></div>
+                <div class="content-item"><a href="https://huggingface.co/BytedanceDouyinContent/SAIL-VL-1d5">多模态大模型SAIL-2B</a></div>
+                <div class="content-item"><a href="https://huggingface.co/BytedanceDouyinContent/SAIL-VL-1d68B">多模态大模型SAIL-8B</a></div>
+            </div>
+        </div>
+
+        <div class="sub-section">
+            <h3 class="sub-section-title">OCR</h3>
+            <div class="content-list">
+                <div class="content-item"><a href="https://huggingface.co/ByteDance/Dolphin">Dolphin-OCR 模型</a></div>
+            </div>
+        </div>
+
+        <div class="sub-section">
+            <h3 class="sub-section-title">视频编码/生成</h3>
+            <div class="content-list">
+                <div class="content-item"><a href="https://contentv.github.io">ContentV</a></div>
+                <div class="content-item"><a href="https://github.com/bytedance/CascadeV">视频编码CascadeV</a></div>
+                <div class="content-item"><a href="https://github.com/bytedance/EchoVideo">人脸一致性生成-EchoVideo</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publication -->
+    <div class="section">
+        <h2 class="section-title">Publication</h2>
+        
+        <div class="sub-section">
+            <h3 class="sub-section-title">2025</h3>
+            
+            <div class="sub-section">
+                <h4 class="sub-section-title">多模态大模型预训练</h4>
+                <div class="content-list">
+                    <div class="content-item"><a href="https://arxiv.org/abs/2501.05952">SAIL-VLv1: Scalable Vision Language Model Training via High Quality Data Curation</a> <span class="tag">ACL2025</span></div>
+                    <div class="content-item"><a href="https://arxiv.org/pdf/2509.14033">SAIL-VL2 Technical Report</a> <span class="tag"><a href="https://mp.weixin.qq.com/s/QfOU6PfWvWfuY5B6u-S2mg">量子位:抖音&LV-NUS开源多模态新模，以小博大刷新SOTA，8B推理比肩GPT-4o</a></span></div>
+                    <div class="content-item"><a href="https://arxiv.org/abs/2510.12709">SAIL Embedding: SAIL-Embedding Technical Report: Omni-modal Embedding Foundation Model</a> <span class="tag"><a href="https://mp.weixin.qq.com/s/H7Q6nM500crysu7xS_E4qQ">机器之心:抖音SAIL团队联合港中文MMLab推出SAIL-Embedding:打通「视、文、音」的全模态嵌入</a></span></div>
+                    <div class="content-item">SAIL-VL optimizer: AdaLRS: Loss-Guided Adaptive Learning Rate Search for Efficient Foundation Model Pretraining <span class="tag">NIPS2025</span></div>
+                    <div class="content-item">MEML-GRPO: Heterogeneous Multi-Expert Mutual Learning for RLVR Advancement <span class="tag">AAAI2026</span></div>
+                    <div class="content-item">Vision as LoRA</div>
+                    <div class="content-item">VGR: Visual Grounded Reasoning</div>
+                    <div class="content-item">SAILViT: Towards Robust and Generalizable Visual Backbones for MLLMs via Gradual Feature Refinement</div>
+                    <div class="content-item">Post-Completion Learning for Language Models</div>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <h4 class="sub-section-title">大模型应用</h4>
+                <div class="content-list">
+                    <div class="content-item">Advancing Sequential Numerical Prediction in Autoregressive Models <span class="tag">ACL2025</span></div>
+                    <div class="content-item">Worth One Token - Interleaving Layout and Text in a Large Language Model Understanding <span class="tag">ACL2025</span></div>
+                    <div class="content-item">Simple Dynamic Visual Token Compression for VideoLLM <span class="tag">ICCV2025</span></div>
+                    <div class="content-item">Multi-modal Keyphrase Prediction with Dynamic Chain-of-Thought in Vision-Language Models <span class="tag">EMNLP2025</span></div>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <h4 class="sub-section-title">LLM4Rec</h4>
+                <div class="content-list">
+                    <div class="content-item">Semi-Supervised Synthetic Data Generation with Fine-Grained Relevance Control for Short Video Search Relevance Modeling <span class="tag">AAAI2026</span></div>
+                    <div class="content-item">CONF-PROFILE: A Confidence-Driven Reasoning Paradigm for Label-Free User Profiling</div>
+                    <div class="content-item">Semi-Supervised Synthetic Data Generation with Fine-Grained Relevance Control for Short Video Search Relevance Modeling</div>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <h4 class="sub-section-title">OCR</h4>
+                <div class="content-list">
+                    <div class="content-item">Dolphin: Document Image Parsing via Heterogeneous Anchor Prompting <span class="tag">ACL2025</span></div>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <h4 class="sub-section-title">CV</h4>
+                <div class="content-list">
+                    <div class="content-item">LVFace: Large Vision model for Face Recogniton <span class="tag">ICCV2025</span></div>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <h4 class="sub-section-title">模型评估</h4>
+                <div class="content-list">
+                    <div class="content-item">MTVQA: Benchmarking Multilingual Text-Centric Visual Question Answering <span class="tag">ACL2025</span></div>
+                    <div class="content-item">Benchmarking Chinese Commonsense Reasoning with a Multi-hop Reasoning Perspective</div>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <h4 class="sub-section-title">视频生成</h4>
+                <div class="content-list">
+                    <div class="content-item">ContentV: Efficient Training of Video Generation Models with Limited Compute <span class="tag"><a href="https://mp.weixin.qq.com/s/oUDagx39FhjMJPNXB_y2xA">机器之心:256块卡训成8B视频模型、超越Sora等一众闭源!抖音内容技术团队开源ContentV</a></span></div>
+                    <div class="content-item">EchoVideo: Identity-Preserving Human Video Generation by Multimodal Feature Fusion</div>
+                    <div class="content-item">CascadeV: An Implementation of Würstchen Architecture for Video Generation</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 欢迎联络 -->
+    <div class="section contact-section">
+        <h2 class="section-title">欢迎联络</h2>
+        <div class="content-item" style="margin-bottom: 20px;"></div>
+        <div class="contact-qrcode">
+            <div class="qrcode-item">
+                <div class="qrcode-placeholder"><img src="static/9be38d47-f72e-4c5e-bbce-a8b9cbdb1b8d.png" height="180" /></div>
+                <div class="qrcode-desc">抖音，辰风</div>
+            </div>
+            <div class="qrcode-item">
+                <div class="qrcode-placeholder"><img src="static/7ad4fe53-f1fe-41ce-9b3e-2e93d4f08196.png" height="180" /></div>
+                <div class="qrcode-desc">王哪跑</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
